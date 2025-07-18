@@ -1,56 +1,63 @@
-# IX-ThermaForge Bill of Materials (BOM)
+# Bill of Materials (BOM) — IX-ThermaForge Full System
 
-Author: Bryce Wooster  
-Date: 2025-07-15
-
----
-
-## Overview
-
-This BOM lists all core components and materials required to build the IX-ThermaForge triangular harmonic energy beam system as designed.
-
-All parts specified are commercially available or standard industrial-grade components. No proprietary or controlled military hardware is included.
+**Version:** Tesla 3-6-9 + Kirin Core + Horus DOE Integration  
+**Date:** 2025-07-18  
 
 ---
 
-## Core Components
+## 1️⃣ Structural & Frame Materials
 
-| Item # | Component                         | Specification / Details                                      | Quantity | Approx. Cost (USD) | Notes                          |
-|--------|---------------------------------|-------------------------------------------------------------|----------|--------------------|--------------------------------|
-| 1      | High-Power Laser Diode Module   | 850nm - 940nm wavelength, 6-inch x 3-inch aperture size     | 3        | $1,500 each        | Custom or OEM module           |
-| 2      | Triangular Beam Shaping Optics  | High-precision fused silica prisms and slits                | 3 sets   | $750 per set       | Includes phase control slits   |
-| 3      | Magnetic Coil Assemblies         | Copper wire coil, 18 AWG, custom wound for harmonic control | 3        | $300 each          | Includes bobbin and connectors |
-| 4      | Thermal Management Heat Sink    | Copper/aluminum hybrid, active liquid cooling compatible     | 3        | $200 each          | Must sustain up to 100W heat   |
-| 5      | Liquid Cooling Pump & Reservoir | Closed-loop system compatible with heat sinks               | 1        | $400               | High flow, vibration dampened  |
-| 6      | Microcontroller Unit (MCU)       | ARM Cortex-M7 or better, real-time control capable           | 1        | $50                | For harmonic control sequencing|
-| 7      | FPGA Module                     | Xilinx or Intel equivalent, for real-time phase modulation   | 1        | $250               | Optional but recommended       |
-| 8      | Power Supply Unit (PSU)         | 24V DC, 600W output, stable, low ripple                      | 1        | $150               | Overcurrent and thermal protection |
-| 9      | Spintronic Field Emitter Units  | Commercial spintronic devices or lab-grade waveguides        | 3        | $1,000 each        | Specialized, research grade    |
-| 10     | Structural Housing              | Aluminum alloy 6061, machined for beam alignment             | Custom   | $500 approx        | Includes mounts and shielding  |
-| 11     | Wiring and Connectors           | High-current rated, shielded cables                          | Various  | $100 approx        | Includes EMI shielding         |
-| 12     | Sensors (Temp, Magnetic, Phase)| High-precision sensors for feedback loops                    | Various  | $150 approx        | Critical for real-time control |
+| Item                    | Quantity | Specification                |
+|------------------------|----------|-----------------------------|
+| Triostrut frame rods   | 108      | 1m lengths, aluminum-carbon hybrid |
+| Thermal insulation plates | 36     | Ceramic, high-temp resistant |
 
 ---
 
-## Additional Materials
+## 2️⃣ Beam System Components
 
-| Item # | Material                         | Specification                                              | Quantity   | Approx. Cost (USD) | Notes                      |
-|--------|---------------------------------|------------------------------------------------------------|------------|--------------------|----------------------------|
-| 13     | Optical-grade Fused Silica       | For lenses and beam shaping elements                        | Various    | $300 approx        | High purity recommended     |
-| 14     | Insulation Materials             | Thermal and electromagnetic shielding                       | Various    | $200 approx        | Use non-conductive, heat-resistant |
-| 15     | Cooling Fluid                   | Deionized water with corrosion inhibitors                   | 5 liters   | $50                | Maintain fluid quality      |
-
----
-
-## Notes and Recommendations
-
-- All components must be sourced from reputable industrial or scientific suppliers.  
-- Spintronic units may require custom orders or research collaborations.  
-- Assembly requires precision machining and optical alignment facilities.  
-- Safety protocols must be strictly followed for high-power laser operation.  
-- Costs are approximate and will vary by supplier and quantity.  
+| Item                    | Quantity | Specification                |
+|------------------------|----------|-----------------------------|
+| Triangular beam emitters | 3       | 850nm - 940nm high-power diode arrays |
+| Beam focusing optics   | 3 sets   | Fused silica, anti-reflective coating |
+| Horus-pattern DOE lens | 1        | Custom fabricated, sub-200nm etching resolution |
 
 ---
 
-For detailed assembly instructions, see [BUILD_GUIDE.md](./BUILD_GUIDE.md).
+## 3️⃣ Kirin Core System
+
+| Item                          | Quantity | Specification                |
+|-------------------------------|----------|-----------------------------|
+| Superconducting coil sets     | 9        | Tesla 3-6-9 harmonic alignment, HTS wire |
+| Tungsten alloy core mass      | 1        | Center core stabilization    |
+| Cryo-cooling unit             | 1        | For Kirin Core temperature control |
+
+---
+
+## 4️⃣ Penning Trap Array Components
+
+| Item                    | Quantity | Specification                |
+|------------------------|----------|-----------------------------|
+| Penning traps          | 36       | Micro-field stabilization traps |
+| Control PCB            | 1        | FPGA-based modulation board |
+| Sensor arrays          | 6        | Magnetic field and spin detection |
+
+---
+
+## 5️⃣ Power System
+
+| Item                    | Quantity | Specification                |
+|------------------------|----------|-----------------------------|
+| Main power supply unit | 1        | 220V AC input, DC variable output, 10kW min |
+| Backup battery system  | 1        | Liquid metal battery (IX-Fuse compatible) |
+
+---
+
+## ✅ Notes
+
+- All components aligned with Tesla 3-6-9 structuring principles.  
+- No proprietary defense components used; all materials publicly sourced or specifiable.  
+- BOM reflects modular subsystem integration: Beam Array, Kirin Core, Penning Array, Horus Lens.  
+
+---
 
